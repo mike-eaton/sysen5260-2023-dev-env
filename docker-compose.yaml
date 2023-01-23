@@ -1,0 +1,7 @@
+services:
+  hello-dev-env:
+    image: busybox
+    volumes:
+      - ./:/opt/app
+    working_dir: /opt/app
+    command: ["sh", "hello-world.sh"]
